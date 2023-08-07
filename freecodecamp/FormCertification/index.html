@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+</head>
+<body>
+   <h1 id="title">freeCodeCamp Survey Form</h1> 
+   <p id="description">Thank you for taking the time to help us improve the platform</p>
+   
+   <form id="survey-form">
+    
+    <label for="name-label" id="name-label"> Name 
+        <input id="name" type="text" placeholder="Enter your name" required/> 
+    </label>
+    <label for="email-label" id="email-label"> Email 
+        <input id="email" type="email" placeholder="Enter your Email" required/> 
+    </label>
+    <label for="number-label" id="number-label"> Age (optional) 
+        <input id="number" type="number" min="13" max="120" placeholder="Age"/> 
+    </label>
+
+    <label for="dropdown">Which option best describes your current role?
+    <select name="dropdown " id="dropdown">
+        <option value="">Select current role</option>
+        <option value="student">Student</option>
+        <option value="ftJob">Full time job</option>
+        <option value="ftLearner">Full time learner</option>
+        <option value="notSay">Prefer not to say</option>
+        <option value="other">Other</option>
+    </select>
+    </label>
+
+    <label for="definitely">"Would you recommend freeCodeCamp to a friend?"
+        <input id="definitely" type="radio" name="recommend" value="definitely">
+        Definitely
+    </label>
+    <label for="maybe">
+        <input id="maybe" type="radio" name="recommend" value="maybe" >
+        Maybe
+    </label>
+    <label for="notSure">
+        <input id="notSure" type="radio" name="recommend" value="notsure" >
+        Not sure
+    </label>
+
+    <label for="improved">What would you like to see improved? (Check all that apply)
+        <input id="front" type="checkbox" name="improved" value="front" >
+        Front-end Projects
+    </label>
+    <label for="improved">
+        <input id="back" type="checkbox" name="improved" value="back">
+        Back-end Projects
+    </label>
+    <label for="improved">
+        <input id="data" type="checkbox" name="improved" value="data">
+        Data Visualization
+    </label>
+    <label for="improved">
+        <input id="challenge" type="checkbox" name="improved" value="challenge">
+        Challenges
+    </label>
+    <label for="improved">
+        <input id="community" type="checkbox" name="improved" value="community">
+        Open Source Community
+    </label>
+    <label for="improved">
+        <input id="
+        rooms" type="checkbox" name="improved" value="rooms">
+        Gitter help rooms
+    </label>
+    <label for="improved">
+        <input id="videos" type="checkbox" name="improved" value="videos">
+        Videos
+    </label>
+    <label for="improved">
+        <input id="meetups" type="checkbox" name="improved" value="meetups">
+        City Meetups
+    </label>
+    <label for="improved">
+        <input id="wiki" type="checkbox" name="improved" value="wiki">
+        Wiki
+    </label>
+    <label for="improved">
+        <input id="forum" type="checkbox" name="improved" value="forum">
+        Forum
+    </label>
+    <label for="improved">
+        <input id="addCourses" type="checkbox" name="improved" value="courses">
+        Additional Courses
+    </label>
+
+    <label for="comments">
+        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+    </label>
+
+    <input type="submit" value="Submit" id="submit">
+
+   </form>
+</body>
+</html>
